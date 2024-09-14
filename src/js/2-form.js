@@ -1,6 +1,9 @@
 const form = document.querySelector('.feedback-form');
 const STORAGE_KEY = 'feedback-form-state';
-let formData = { email: '', message: '' };
+let formData = {
+    email: '',
+    message: '',
+};
 
 const savedData = localStorage.getItem(STORAGE_KEY);
 if (savedData) {
@@ -25,5 +28,10 @@ form.addEventListener('submit', event => {
   console.log(formData);
   localStorage.removeItem(STORAGE_KEY);
   form.reset();
-  formData = { email: '', message: '' };
+    formData = {
+        email: '',
+        message: '',
+    };
 });
+
+console.log('eorfjervgjervgnfiovnfknv');
